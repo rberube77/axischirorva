@@ -1,0 +1,121 @@
+/* Reset and Base Styles */
+:root {
+    --primary-navy: #003366;
+    --secondary-bg: #f4f7f6;
+    --white: #ffffff;
+    --text-dark: #333333;
+    --accent-color: #ff6b35; /* High visibility orange for CTA */
+    --accent-hover: #e85a23;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--text-dark);
+    background-color: var(--secondary-bg);
+}
+
+/* Layout Utilities */
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Header Styling */
+header {
+    background-color: var(--primary-navy);
+    color: var(--white);
+    padding: 3rem 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}
+
+header .subtitle {
+    font-size: 1.2rem;
+    font-weight: 300;
+    opacity: 0.9;
+    letter-spacing: 1px;
+}
+
+/* Main Profile Section */
+.profile-section {
+    background-color: var(--white);
+    margin: 3rem auto;
+    padding: 3rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+/* Responsive Desktop Layout */
+@media (min-width: 768px) {
+    .profile-section {
+        flex-direction: row;
+        align-items: flex-start;
+        text-align: left;
+    }
+    
+    .bio-content {
+        flex: 1;
+    }
+}
+
+/* Profile Image */
+.profile-image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid var(--primary-navy);
+    flex-shrink: 0;
+}
+
+/* Typography & Content */
+.bio-content h2 {
+    color: var(--primary-navy);
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+}
+
+.bio-content p {
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Call to Action Button */
+.btn-primary {
+    display: inline-block;
+    background-color: var(--accent-color);
+    color: var(--white);
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.btn-primary:hover {
+    background-color: var(--accent-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0,0,0,0.15);
+}
