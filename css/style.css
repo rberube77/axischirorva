@@ -51,6 +51,13 @@ header .subtitle {
     letter-spacing: 1px;
 }
 
+header h1 .header-sub {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-top: 0.2rem;
+}
+
 /* Main Profile Section */
 .profile-section {
     background-color: var(--white);
@@ -92,6 +99,10 @@ header .subtitle {
     color: var(--primary-navy);
     margin-bottom: 1rem;
     font-size: 1.8rem;
+}
+
+.bio-content h2 .text-highlight {
+    color: var(--accent-color);
 }
 
 .bio-content p {
