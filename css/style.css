@@ -240,3 +240,24 @@ footer {
     font-size: 0.9rem;
     color: #aaa;
 }
+
+/* Mobile Specific Adjustments */
+@media (max-width: 600px) {
+    /* H1: Break sub-header onto new line and hide separator */
+    header h1 .header-sub .separator {
+        display: none;
+    }
+    header h1 .header-sub em {
+        display: block;
+        margin-top: 0.3rem;
+    }
+
+    /* H2: Hide colon and stack text */
+    .bio-content h2 .colon {
+        display: none;
+    }
+    .bio-content h2 .text-highlight {
+        display: block;
+        font-size: 1.5rem; /* Slightly smaller to fit on one line */
+    }
+}
