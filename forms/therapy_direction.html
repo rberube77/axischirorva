@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise Therapy Program Direction Sheet</title>
+    <style>
+        :root {
+            --primary-font: 'Arial', sans-serif;
+            --line-color: #333;
+            --bg-color: #f9f9f9;
+        }
+        body {
+            font-family: var(--primary-font);
+            margin: 0;
+            padding: 20px;
+            color: #000;
+            font-size: 13px;
+            line-height: 1.4;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 20px 30px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 25px;
+            border-bottom: 2px solid #000;
+            padding-bottom: 15px;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 22px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #4CAF50; /* Green accent matching TRI-AD logo style */
+        }
+        .header h1 span {
+            color: #2196F3; /* Blue accent */
+        }
+        .header h2 {
+            margin: 5px 0 0;
+            font-size: 14px;
+            font-weight: normal;
+            color: #555;
+            letter-spacing: 1px;
+        }
+        .header h3 {
+            margin: 15px 0 5px 0;
+            font-size: 16px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        .header .subtitle {
+            font-size: 12px;
+            font-style: italic;
+            color: #555;
+        }
+        .row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+            gap: 15px;
+        }
+        .field {
+            display: flex;
+            align-items: flex-end;
+            flex: 1;
+        }
+        .field label {
+            white-space: nowrap;
+            margin-right: 5px;
+            font-weight: bold;
+        }
+        .line {
+            flex-grow: 1;
+            border-bottom: 1px solid var(--line-color);
+            height: 1.2em;
+        }
+        .full-width {
+            width: 100%;
+            margin-bottom: 15px;
+        }
+        .full-width label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .full-line {
+            width: 100%;
+            height: 20px;
+            border-bottom: 1px solid var(--line-color);
+            margin-bottom: 6px;
+        }
+        
+        /* 2-Column Grid Layout styling */
+        .two-col-container {
+            display: flex;
+            border: 2px solid #000;
+            margin-bottom: 20px;
+        }
+        .col {
+            flex: 1;
+            padding: 12px;
+        }
+        .col-left {
+            border-right: 2px solid #000;
+        }
+        .section-title {
+            background-color: #e0e0e0;
+            padding: 6px;
+            font-weight: bold;
+            font-size: 13px;
+            text-align: center;
+            margin: -12px -12px 12px -12px;
+            border-bottom: 2px solid #000;
+        }
+        
+        /* Checkbox styling */
+        .checkbox-group {
+            margin-bottom: 15px;
+        }
+        .checkbox-item {
+            display: flex;
+            align-items: center;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .box {
+            width: 12px;
+            height: 12px;
+            border: 1px solid #000;
+            margin-right: 8px;
+            display: inline-block;
+        }
+        .sub-checkboxes {
+            margin-left: 25px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+        .sub-item {
+            display: flex;
+            align-items: center;
+            font-size: 12px;
+        }
+        .inline-line {
+            display: inline-block;
+            width: 80px;
+            border-bottom: 1px solid #000;
+            margin-left: 5px;
+        }
+        .themes-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px;
+            margin-top: 8px;
+        }
+
+        /* Print Specific Styles */
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+            .container {
+                box-shadow: none;
+                max-width: 100%;
+                padding: 0;
+            }
+            .section-title {
+                background-color: #e0e0e0 !important;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <h1><span>TRI-</span>AD</h1>
+            <h2>CHIROPRACTIC | MOVEMENT | LIFESTYLE</h2>
+            <h3>EXERCISE THERAPY PROGRAM DIRECTION SHEET</h3>
+            <div class="subtitle">(For Use Between Chiropractor & Personal Trainer)</div>
+        </div>
+
+        <div class="row">
+            <div class="field" style="flex: 3;"><label>Patient Name:</label><div class="line"></div></div>
+            <div class="field" style="flex: 1;"><label>Age:</label><div class="line"></div></div>
+            <div class="field" style="flex: 1.5;"><label>Date:</label><div class="line"></div></div>
+        </div>
+
+        <div class="full-width">
+            <label>Contraindications / Precautions:</label>
+            <div class="full-line"></div>
+            <div class="full-line"></div>
+        </div>
+
+        <div class="two-col-container">
+            <!-- Left Column -->
+            <div class="col col-left">
+                <div class="section-title">PRIMARY REGION OF FOCUS (DC Check one)</div>
+                
+                <div class="checkbox-group">
+                    <div class="checkbox-item"><span class="box"></span> Cervical / Thoracic Region</div>
+                    <div class="sub-checkboxes">
+                        <div class="sub-item"><span class="box"></span> Sprain/Strain</div>
+                        <div class="sub-item"><span class="box"></span> FHP</div>
+                        <div class="sub-item"><span class="box"></span> Headaches</div>
+                        <div class="sub-item"><span class="box"></span> Other: <span class="inline-line" style="width: 100px;"></span></div>
+                    </div>
+                </div>
+
+                <div class="checkbox-group">
+                    <div class="checkbox-item"><span class="box"></span> Lumbar / Pelvic Region</div>
+                    <div class="sub-checkboxes">
+                        <div class="sub-item"><span class="box"></span> Sciatica</div>
+                        <div class="sub-item"><span class="box"></span> Stenosis</div>
+                        <div class="sub-item"><span class="box"></span> Hip Impingement</div>
+                        <div class="sub-item"><span class="box"></span> Other: <span class="inline-line" style="width: 100px;"></span></div>
+                    </div>
+                </div>
+
+                <div class="checkbox-group" style="margin-bottom: 0;">
+                    <div class="checkbox-item"><span class="box"></span> Shoulder</div>
+                    <div class="sub-checkboxes" style="margin-bottom: 0;">
+                        <div class="sub-item"><span class="box"></span> Frozen Shoulder</div>
+                        <div class="sub-item"><span class="box"></span> Shoulder Impingement</div>
+                        <div class="sub-item"><span class="box"></span> Other: <span class="inline-line" style="width: 100px;"></span></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column -->
+            <div class="col">
+                <div class="section-title">CLINICAL DIRECTION</div>
+                
+                <div class="full-width">
+                    <label>Movement Restrictions:</label>
+                    <div class="full-line"></div>
+                    <div class="full-line"></div>
+                </div>
+
+                <div class="full-width" style="margin-bottom: 25px;">
+                    <label>Recommended Exercise Themes:</label>
+                    <div class="themes-grid">
+                        <div class="sub-item"><span class="box"></span> Mobility</div>
+                        <div class="sub-item"><span class="box"></span> Stability</div>
+                        <div class="sub-item"><span class="box"></span> Activation</div>
+                        <div class="sub-item"><span class="box"></span> Motor Control/Coordination</div>
+                    </div>
+                </div>
+
+                <div class="full-width" style="margin-bottom: 0;">
+                    <label>Exercises to Avoid:</label>
+                    <div class="full-line"></div>
+                    <div class="full-line"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="full-width">
+            <label>Notes:</label>
+            <div class="full-line"></div>
+            <div class="full-line"></div>
+            <div class="full-line"></div>
+            <div class="full-line"></div>
+        </div>
+
+        <div class="row" style="margin-top: 35px;">
+            <div class="field" style="flex: 2;"><label>Doctor:</label><div class="line"></div></div>
+            <div class="field" style="flex: 2;"><label>Signature:</label><div class="line"></div></div>
+            <div class="field" style="flex: 1;"><label>Date:</label><div class="line"></div></div>
+        </div>
+
+    </div>
+
+</body>
+</html>
