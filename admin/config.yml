@@ -1,6 +1,7 @@
 backend:
   name: git-gateway
   branch: main
+  repo: rberube77/drrobrva
 
 media_folder: "images/blog"
 public_folder: "/images/blog"
