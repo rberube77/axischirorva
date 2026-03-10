@@ -42,6 +42,7 @@ header h1 {
     font-size: 2.5rem;
     margin-bottom: 0.5rem;
     font-weight: 700;
+    color: var(--white);
 }
 
 header .subtitle {
@@ -441,4 +442,113 @@ footer {
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
+}
+
+/* =========================================
+   Blog Post Detail Styles
+   ========================================= */
+.blog-article {
+    max-width: 800px;
+    margin: 3rem auto;
+    background-color: var(--white);
+    padding: 3rem 4rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+}
+
+@media (max-width: 768px) {
+    .blog-article {
+        padding: 2rem 1.5rem;
+        margin: 1.5rem auto;
+        width: 95%;
+    }
+}
+
+.blog-featured-image {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 2.5rem;
+    background-color: #eee; /* Placeholder color while loading */
+}
+
+.blog-header {
+    background-color: transparent;
+    box-shadow: none;
+    padding-top: 0;
+    text-align: center;
+    margin-bottom: 2.5rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #eee;
+}
+
+.blog-title {
+    color: var(--primary-navy);
+    font-size: 2.2rem;
+    margin-bottom: 0.8rem;
+    line-height: 1.2;
+}
+
+.blog-date {
+    color: #777;
+    font-style: italic;
+    font-size: 0.95rem;
+}
+
+.blog-content {
+    font-size: 1.125rem; /* 18px for better readability */
+    line-height: 1.8;
+    color: #333;
+}
+
+.blog-content p {
+    margin-bottom: 1.5rem;
+}
+
+.blog-content h2 {
+    color: var(--primary-navy);
+    font-size: 1.75rem;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.blog-content h3 {
+    color: var(--accent-color);
+    font-size: 1.4rem;
+    margin-top: 2rem;
+    margin-bottom: 0.8rem;
+    font-weight: 600;
+}
+
+.blog-content ul {
+    margin-bottom: 1.5rem;
+    padding-left: 1.5rem;
+}
+
+.blog-content li {
+    margin-bottom: 0.5rem;
+}
+
+.blog-content strong {
+    color: var(--primary-navy);
+}
+
+.blog-footer-nav {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid #eee;
+}
+
+.back-link {
+    color: var(--primary-navy);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s;
+}
+
+.back-link:hover {
+    color: var(--accent-color);
 }
