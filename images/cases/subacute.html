@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Path Forward: Understanding Your Subacute Issue: What's Going On & What to Expect</title>
+    <style>
+        :root {
+            --primary-navy: #003366;
+            --secondary-bg: #f4f7f6;
+            --white: #ffffff;
+            --text-dark: #333333;
+            --accent-color: #ff6b35;
+            --status-color: #2196F3; /* Blue Accent for Subacute */
+            --status-bg: #e3f2fd;
+        }
+        
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: var(--secondary-bg);
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 2rem auto;
+            background: var(--white);
+            padding: 2.5rem 3rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                margin: 1rem;
+                padding: 1.5rem;
+            }
+        }
+
+        header {
+            text-align: center;
+            border-bottom: 2px solid var(--primary-navy);
+            padding-bottom: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        header h1 {
+            color: var(--primary-navy);
+            font-size: 2.25rem;
+            margin: 0.5rem 0;
+            line-height: 1.2;
+        }
+
+        .clinic-name {
+            font-size: 1.1rem;
+            color: var(--accent-color);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: bold;
+        }
+
+        h1 {
+            font-size: 2.25rem;
+            margin-bottom: 0.5rem;
+            color: #37352f;
+        }
+
+        h2 {
+            color: var(--primary-navy);
+            font-size: 1.5rem;
+            margin-top: 2rem;
+            border-bottom: 1px solid rgba(55, 53, 47, 0.1);
+            padding-bottom: 0.5rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        .callout {
+            background-color: var(--status-bg);
+            border-left: 4px solid var(--status-color);
+            padding: 16px;
+            border-radius: 4px;
+            margin: 1rem 0;
+            display: flex;
+            gap: 1rem;
+            align-items: flex-start;
+        }
+
+        .callout-icon {
+            font-size: 1.5rem;
+            line-height: 1.2;
+        }
+
+        .callout.appointment {
+            background-color: #e3f2fd;
+            border-color: #2196f3;
+        }
+
+        /* Table Layout Fixes */
+        .collection-content-wrapper {
+            overflow-x: auto;
+        }
+
+        .collection-content table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+            font-size: 0.9rem;
+        }
+
+        .collection-content th, 
+        .collection-content td {
+            border: 1px solid rgba(55, 53, 47, 0.1);
+            padding: 12px;
+            vertical-align: top;
+            line-height: 1.5;
+        }
+
+        .collection-content th {
+            background: #f7f6f3;
+            font-weight: 600;
+            width: 30%;
+        }
+
+        .collection-content tr:nth-child(even) td {
+            background-color: #f9f9f9;
+        }
+
+        ul {
+            padding-left: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        li {
+            margin-bottom: 0.8rem;
+        }
+
+        .contact-list {
+            list-style: none;
+            padding: 0;
+            margin-top: 0.5rem;
+        }
+        
+        .contact-list li {
+            margin-bottom: 0.25rem;
+        }
+
+        .footer-info {
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid #ddd;
+            text-align: center;
+        }
+
+        .footer-info p {
+            margin: 0.3rem 0;
+        }
+
+        .footer-info strong {
+            color: var(--primary-navy);
+            font-size: 1.3rem;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        a {
+            color: var(--primary-navy);
+            text-decoration: none;
+            font-weight: 600;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 600px) {
+            .collection-content table, 
+            .collection-content thead, 
+            .collection-content tbody, 
+            .collection-content th, 
+            .collection-content td, 
+            .collection-content tr {
+                display: block;
+            }
+            .collection-content thead {
+                display: none;
+            }
+            .collection-content tr {
+                margin-bottom: 1.5rem;
+                border: 1px solid #ddd;
+                border-radius: 8px;
+                overflow: hidden;
+            }
+            .collection-content tr:nth-child(even) td {
+                background-color: transparent;
+            }
+            .collection-content td {
+                border: none;
+                padding: 1rem;
+            }
+            .collection-content td:first-child {
+                background-color: var(--primary-navy);
+                color: var(--white);
+            }
+        }
+        
+        /* 1. Fix CSS "Leaking" Text */
+        @page {
+            margin: 1in;
+        }
+        @media only print {
+            .collection-content-wrapper {
+                overflow-x: visible;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="clinic-name">Tri-Ad Chiropractic</div>
+            <h1>Your Path Forward: Understanding Your Subacute Issue</h1>
+            <h2>What's Going On &amp; What to Expect</h2>
+        </header>
+
+        <div class="callout">
+            <div class="callout-icon">🔵</div>
+            <div>
+                <strong>Subacute Case</strong> — Symptoms lasting 4–12 weeks, a recurring problem that keeps coming back, or an acute injury that hasn't resolved as expected. You're past the addressing it early stage, but your body still has significant capacity to heal.
+            </div>
+        </div>
+
+        <h2>What's Happening in Your Body</h2>
+        <p>Your spine has been under stress for longer than a few weeks — either from a recent injury that didn't fully heal, or from a pattern that's been building quietly for months. The joints involved have likely had time to stiffen, and the surrounding muscles have adapted to protect them.</p>
+        <p>This is called a <strong>compensatory pattern</strong>: your body found a workaround, and now the workaround itself is causing problems. You might feel it as pain that moves around, stiffness that's worse in the morning, or a nagging ache that never quite goes away.</p>
+        <p>Chiropractic care works by systematically restoring normal joint motion and signaling your nervous system to release those compensatory patterns. <strong>It takes longer than an acute case, but the results are durable</strong> — because we're not just quieting down symptoms, we're correcting the underlying movement problem.</p>
+
+        <h2>What to Expect Over the Next Several Weeks</h2>
+        <div class="collection-content-wrapper">
+            <div class="collection-content">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Timeframe</th>
+                            <th>What You'll Likely Notice</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Tonight &amp; tomorrow</strong></td>
+                            <td>Muscle soreness is common. Your body is responding to movement it hasn't had in a while. This is a good sign.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Visits 1–4</strong></td>
+                            <td>Pain may fluctuate — some days noticeably better, others similar to before. Non-linear progress is normal at this stage.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Visits 5–8</strong></td>
+                            <td>Most patients notice a clear trend: pain is more manageable, movement is improving, and flare-ups are shorter when they happen.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Visits 9–12</strong></td>
+                            <td>Stabilization phase. Gains hold longer between visits. At your re-exam (Visit 11–12), we measure exactly how far you've come and build the next phase of your plan. For subacute cases, this re-exam is a checkpoint — not necessarily the finish line. Many patients continue into a stabilization phase beyond visit 12 to lock in their results.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <h2>What's Normal Between Visits</h2>
+        <p>Most patients leave their first visit feeling some immediate improvement. Between visits, that can shift in one of two ways — and both are a normal part of the process, not a sign the plan isn't working.</p>
+        <p><strong>If your symptoms return:</strong></p>
+        <p>The spinal pattern is reasserting itself between adjustments. This is expected early in care — your spine hasn't had enough consistent input yet to hold the correction on its own. It doesn't mean the adjustment didn't work. It means your body needs the next one. The window between "adjusted" and "drifting back" will get longer as care progresses.</p>
+        <p><strong>If your improvement plateaus:</strong></p>
+        <p>You feel better than when you started, but progress has leveled off. This is also normal in subacute cases and usually means we're at a transition point — your nervous system has done everything it can with the initial input and is ready for the next adjustment. A plateau isn't a ceiling. It's a signal to stay the course.</p>
+        <p>In either case: come in for your next scheduled visit. And if at any point you notice new symptoms, reach out to us right away so we can stay on top of your care and adjust your plan if necessary.</p>
+
+        <h2>Why Consistency Is Critical at This Stage</h2>
+        <p>Patients who get the best results in subacute cases share one thing in common: they stay consistent through the middle of care — especially around Visits 4–6, when initial improvement has happened but the underlying pattern isn't fully resolved yet. That window is where the real work happens.</p>
+        <p>Think of it like this: if you stopped a course of antibiotics halfway through because you felt better, you'd know the risk of the infection returning is greater. Chiropractic care works similarly — the early improvement is real, but the underlying pattern needs more consistent input to fully reset and hold.</p>
+
+        <h2>Your Job Between Visits</h2>
+        <ul>
+            <li><strong>Tonight:</strong> Hot shower on the area we worked on. Ice if you feel sore (15–20 minutes max).</li>
+            <li><strong>Stay active:</strong> Gentle movement helps. Avoid extended sitting or positions that load the area heavily. Movements and/or exercises your body is accustomed to that do not aggrevate symptons are fine to continue, but avoid adding "new" exercise routines for now unless specficially instructed by your healthcare provider.</li>
+            <li><strong>Notice patterns:</strong> Which activities make it better or worse? Bring that information back — it helps us refine your care.</li>
+            <li><strong>Notice what changes:</strong> Pay attention to any shifts in pain, stiffness, or movement after your adjustment — and roughly how long the benefit lasts before things plateau or start drifting back. That window will get longer as we go. When you come in and say "I felt good for three days this time instead of one" — that's your spine learning to hold the correction, and it's exactly how we know the plan is working.</li>
+            <li><strong>Hydrate well:</strong> Your discs and joints respond better when you're well-hydrated.</li>
+        </ul>
+
+        <h2>Your Next Appointment</h2>
+        <div class="callout appointment">
+            <div class="callout-icon">📅</div>
+            <div>
+                <p><strong>Visit 2 is your most important appointment.</strong> That's when we review all of your findings, show you what they mean, and build a care plan around your specific situation.</p>
+                <p>If you haven't scheduled it yet:</p>
+                <ul class="contact-list">
+                    <li><strong>Text us:</strong> <a href="sms:+18445854113">(844) 585-4113</a></li>
+                    <li><strong>Call us:</strong> <a href="tel:+18042703000">(804) 270-3000</a></li>
+                </ul>
+                <p style="margin-top: 1rem;">Ideally, keep your second visit within a few days of your first visit — the second adjustment builds directly on the first.</p>
+            </div>
+        </div>
+
+        <h2>Questions Before Then?</h2>
+        <p>No question is too small—we want you to feel confident in your recovery. Call or text the front desk anytime.</p>
+
+        <div class="footer-info">
+            <strong>Tri-Ad Chiropractic</strong>
+            <p>📍 10857 West Broad Street, Glen Allen, VA 23060</p>
+            <p>📞 Call: <a href="tel:+18042703000">(804) 270-3000</a></p>
+            <p>💬 Text: <a href="sms:+18445854113">(844) 585-4113</a></p>
+        </div>
+    </div>
+</body>
+</html>

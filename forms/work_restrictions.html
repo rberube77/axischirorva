@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work Capacity & Restriction Form</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Print specific styles to ensure it looks like a clean document */
+        @media print {
+            body { background-color: white; }
+            .no-print { display: none !important; }
+            .print-border-none { border: none !important; }
+            input[type="text"], input[type="date"], textarea {
+                border-color: #000 !important;
+                color: #000 !important;
+            }
+            input::placeholder, textarea::placeholder {
+                color: transparent !important;
+            }
+        }
+        
+        /* Custom styles for form lines */
+        .form-line {
+            border-bottom: 1px solid #9ca3af;
+            background-color: transparent;
+            width: 100%;
+            outline: none;
+            padding: 0.125rem 0.25rem;
+        }
+        .form-line:focus {
+            border-bottom-color: #000;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 py-8 print:py-0 print:bg-white text-gray-800 font-sans">
+
+    <!-- Main Document Container -->
+    <div class="max-w-4xl mx-auto bg-white p-10 shadow-lg print:shadow-none print:p-0">
+        
+        <!-- Clinic Header -->
+        <header class="text-center border-b-2 border-gray-800 pb-6 mb-6">
+            <h1 class="text-2xl font-bold uppercase tracking-wider text-gray-900">Tri-Ad Chiropractic</h1>
+            <p class="text-sm mt-1">10857 W Broad St, Glen Allen, VA 23060</p>
+            <p class="text-sm">Phone: 804-270-3000</p>
+        </header>
+
+        <!-- Form Title -->
+        <div class="text-center mb-8">
+            <h2 class="text-xl font-bold uppercase underline decoration-2 underline-offset-4">Certificate of Work Capacity / Restrictions</h2>
+        </div>
+
+        <!-- Section 1: Patient Information -->
+        <section class="mb-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="flex items-end gap-2">
+                    <label class="font-semibold whitespace-nowrap">Patient Name:</label>
+                    <input type="text" class="form-line flex-grow">
+                </div>
+                <div class="flex items-end gap-2">
+                    <label class="font-semibold whitespace-nowrap">Date of Birth:</label>
+                    <input type="text" class="form-line flex-grow text-gray-700">
+                </div>
+                <div class="flex items-end gap-2">
+                    <label class="font-semibold whitespace-nowrap">Employer:</label>
+                    <input type="text" class="form-line flex-grow">
+                </div>
+                <div class="flex items-end gap-2">
+                    <label class="font-semibold whitespace-nowrap">Date of Exam:</label>
+                    <input type="text" class="form-line flex-grow text-gray-700">
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Work Status -->
+        <section class="mb-8 border border-gray-300 p-4 rounded-sm">
+            <h3 class="font-bold text-lg mb-4 bg-gray-100 print:bg-transparent px-2 py-1 uppercase">1. Work Status</h3>
+            <div class="space-y-3 px-2">
+                <label class="flex items-start gap-3 cursor-pointer">
+                    <input type="radio" name="workStatus" class="mt-1 h-4 w-4 text-blue-600 focus:ring-blue-500">
+                    <span class="font-medium">Cleared for regular work duties without restrictions.</span>
+                </label>
+                <label class="flex items-start gap-3 cursor-pointer">
+                    <input type="radio" name="workStatus" class="mt-1 h-4 w-4 text-blue-600 focus:ring-blue-500">
+                    <span class="font-medium">Temporarily totally disabled. Off work entirely.</span>
+                </label>
+                <label class="flex items-start gap-3 cursor-pointer">
+                    <input type="radio" name="workStatus" class="mt-1 h-4 w-4 text-blue-600 focus:ring-blue-500">
+                    <span class="font-medium text-blue-800 print:text-black">Cleared for modified/light duty work with the specific restrictions outlined below.</span>
+                </label>
+            </div>
+        </section>
+
+        <!-- Section 3: Restrictions -->
+        <section class="mb-8 border border-gray-300 p-4 rounded-sm">
+            <h3 class="font-bold text-lg mb-4 bg-gray-100 print:bg-transparent px-2 py-1 uppercase">2. Specific Restrictions</h3>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 px-2">
+                
+                <!-- Lifting Restrictions -->
+                <div>
+                    <h4 class="font-semibold mb-2 border-b border-gray-200 pb-1">Lifting / Carrying</h4>
+                    <div class="space-y-2">
+                        <label class="flex items-center gap-2 cursor-pointer">
+                            <input type="checkbox" class="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                            <span>No lifting/carrying over <input type="text" class="form-line w-12 text-center inline-block"> lbs.</span>
+                        </label>
+                        <label class="flex items-center gap-2 cursor-pointer">
+                            <input type="checkbox" class="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                            <span>No lifting above shoulders</span>
+                        </label>
+                        <label class="flex items-center gap-2 cursor-pointer">
+                            <input type="checkbox" class="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                            <span>No lifting from floor to waist</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Postural Restrictions -->
+                <div>
+                    <h4 class="font-semibold mb-2 border-b border-gray-200 pb-1">Postural / Movement Tolerances</h4>
+                    <div class="space-y-2">
+                        <label class="flex items-center gap-2 cursor-pointer">
+                            <input type="checkbox" class="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                            <span>No repetitive bending / stooping</span>
+                        </label>
+                        <label class="flex items-center gap-2 cursor-pointer">
+                            <input type="checkbox" class="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                            <span>No repetitive twisting of spine</span>
+                        </label>
+                        <label class="flex items-center gap-2 cursor-pointer">
+                            <input type="checkbox" class="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                            <span>No pushing / pulling > <input type="text" class="form-line w-12 text-center inline-block"> lbs.</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Sustained Positions -->
+                <div class="md:col-span-2">
+                    <br><h4 class="font-semibold mb-2 border-b border-gray-200 pb-1">Sustained Positions (Max continuous time)</h4>
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                        <label class="flex items-center gap-2 cursor-pointer">
+                            <input type="checkbox" class="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                            <span>Sitting: max <input type="text" class="form-line w-10 text-center inline-block"> hrs/day</span>
+                        </label>
+                        <label class="flex items-center gap-2 cursor-pointer">
+                            <input type="checkbox" class="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                            <span>Standing: max <input type="text" class="form-line w-10 text-center inline-block"> hrs/day</span>
+                        </label>
+                        <label class="flex items-center gap-2 cursor-pointer">
+                            <input type="checkbox" class="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                            <span>Walking: max <input type="text" class="form-line w-10 text-center inline-block"> hrs/day</span>
+                        </label>
+                    </div>
+                    <div class="mt-3">
+                         <label class="flex items-center gap-2 cursor-pointer">
+                            <input type="checkbox" class="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                            <span>Must be allowed to alternate sitting/standing every <input type="text" class="form-line w-12 text-center inline-block"> minutes.</span>
+                        </label>
+                    </div>
+                </div>
+
+                 <!-- Reduced Schedule -->
+                 <div class="md:col-span-2">
+                    <h4 class="font-semibold mb-2 border-b border-gray-200 pb-1">Work Schedule</h4>
+                    <div class="flex items-center gap-2 cursor-pointer">
+                        <input type="checkbox" class="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                        <span>Reduced hours: Maximum of <input type="text" class="form-line w-12 text-center inline-block"> hours per day / <input type="text" class="form-line w-12 text-center inline-block"> hours per week.</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Section 4: Duration -->
+        <section class="mb-8">
+            <h3 class="font-bold text-lg mb-4 bg-gray-100 print:bg-transparent px-2 py-1 uppercase border border-gray-300 rounded-sm">3. Duration of Restrictions</h3>
+            <div class="flex flex-col sm:flex-row sm:items-end gap-4 px-2">
+                <div class="flex items-end gap-2">
+                    <label class="font-medium whitespace-nowrap">Effective from:</label>
+                    <input type="text" class="form-line w-40 text-gray-700">
+                </div>
+                <div class="flex items-end gap-2">
+                    <label class="font-medium whitespace-nowrap">Through:</label>
+                    <input type="text" class="form-line w-40 text-gray-700">
+                </div>
+                <span class="font-medium text-gray-600 hidden sm:inline">- OR -</span>
+                <label class="flex items-center gap-2 cursor-pointer pb-1">
+                    <input type="checkbox" class="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                    <span class="font-medium">Until Next Re-evaluation Date: <input type="text" class="form-line w-40 text-gray-700"></span>
+                </label>
+            </div>
+        </section>
+
+        <!-- Section 5: Additional Comments -->
+        <section class="mb-12">
+            <h3 class="font-bold text-lg mb-2 uppercase">Additional Comments / Specific Accommodations:</h3>
+            <textarea class="w-full h-24 border border-gray-300 rounded-sm p-2 focus:outline-none focus:border-black resize-none"></textarea>
+        </section>
+
+        <!-- Provider Signature -->
+        <section class="mt-16 pt-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div>
+                    <div class="border-b border-black h-8"></div>
+                    <p class="text-sm font-semibold mt-1">Provider Signature</p>
+                </div>
+                <div>
+                    <div class="flex items-end gap-2 h-8">
+                        <input type="text" class="form-line w-full text-gray-700">
+                    </div>
+                    <p class="text-sm font-semibold mt-1">Date</p>
+                </div>
+                <div class="md:col-span-2">
+                    <div class="flex items-end gap-2">
+                        <label class="text-sm font-semibold whitespace-nowrap">Provider Printed Name:</label>
+                        <input type="text" class="form-line flex-grow">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+</body>
+</html>

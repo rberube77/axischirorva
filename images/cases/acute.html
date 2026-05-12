@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Path Forward: Understanding Your Acute Issue: What's Going On & What to Expect</title>
+    <style>
+        :root {
+            --primary-navy: #003366;
+            --secondary-bg: #f4f7f6;
+            --white: #ffffff;
+            --text-dark: #333333;
+            --accent-color: #ff6b35;
+            --status-color: #4CAF50; /* Green Accent for Acute */
+            --status-bg: #e8f5e9;
+        }
+        
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: var(--secondary-bg);
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 2rem auto;
+            background: var(--white);
+            padding: 2.5rem 3rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                margin: 1rem;
+                padding: 1.5rem;
+            }
+        }
+
+        header {
+            text-align: center;
+            border-bottom: 2px solid var(--primary-navy);
+            padding-bottom: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        header h1 {
+            color: var(--primary-navy);
+            font-size: 2.25rem;
+            margin: 0.5rem 0;
+            line-height: 1.2;
+        }
+
+        .clinic-name {
+            font-size: 1.1rem;
+            color: var(--accent-color);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: bold;
+        }
+
+        h1 {
+            font-size: 2.25rem;
+            margin-bottom: 0.5rem;
+            color: #37352f;
+        }
+
+        h2 {
+            color: var(--primary-navy);
+            font-size: 1.5rem;
+            margin-top: 2rem;
+            border-bottom: 1px solid rgba(55, 53, 47, 0.1);
+            padding-bottom: 0.5rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        .callout {
+            background-color: var(--status-bg);
+            border-left: 4px solid var(--status-color);
+            padding: 16px;
+            border-radius: 4px;
+            margin: 1rem 0;
+            display: flex;
+            gap: 1rem;
+            align-items: flex-start;
+        }
+
+        .callout-icon {
+            font-size: 1.5rem;
+            line-height: 1.2;
+        }
+
+        .callout.appointment {
+            background-color: #e3f2fd;
+            border-color: #2196f3;
+        }
+
+        /* Table Layout Fixes */
+        .collection-content-wrapper {
+            overflow-x: auto;
+        }
+
+        .collection-content table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+            font-size: 0.9rem;
+        }
+
+        .collection-content th, 
+        .collection-content td {
+            border: 1px solid rgba(55, 53, 47, 0.1);
+            padding: 12px;
+            vertical-align: top;
+            line-height: 1.5;
+        }
+
+        .collection-content th {
+            background: #f7f6f3;
+            font-weight: 600;
+            width: 30%;
+        }
+
+        .collection-content tr:nth-child(even) td {
+            background-color: #f9f9f9;
+        }
+
+        ul {
+            padding-left: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        li {
+            margin-bottom: 0.8rem;
+        }
+
+        .contact-list {
+            list-style: none;
+            padding: 0;
+            margin-top: 0.5rem;
+        }
+        
+        .contact-list li {
+            margin-bottom: 0.25rem;
+        }
+
+        .footer-info {
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid #ddd;
+            text-align: center;
+        }
+
+        .footer-info p {
+            margin: 0.3rem 0;
+        }
+
+        .footer-info strong {
+            color: var(--primary-navy);
+            font-size: 1.3rem;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        a {
+            color: var(--primary-navy);
+            text-decoration: none;
+            font-weight: 600;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 600px) {
+            .collection-content table, 
+            .collection-content thead, 
+            .collection-content tbody, 
+            .collection-content th, 
+            .collection-content td, 
+            .collection-content tr {
+                display: block;
+            }
+            .collection-content thead {
+                display: none;
+            }
+            .collection-content tr {
+                margin-bottom: 1.5rem;
+                border: 1px solid #ddd;
+                border-radius: 8px;
+                overflow: hidden;
+            }
+            .collection-content tr:nth-child(even) td {
+                background-color: transparent;
+            }
+            .collection-content td {
+                border: none;
+                padding: 1rem;
+            }
+            .collection-content td:first-child {
+                background-color: var(--primary-navy);
+                color: var(--white);
+            }
+        }
+        
+        /* 1. Fix CSS "Leaking" Text */
+        @page {
+            margin: 1in;
+        }
+        @media only print {
+            .collection-content-wrapper {
+                overflow-x: visible;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="clinic-name">Tri-Ad Chiropractic</div>
+            <h1>Your Path Forward: Understanding Your Acute Issue</h1>
+            <h2>What's Going On &amp; What to Expect</h2>
+        </header>
+
+        <div class="callout">
+            <div class="callout-icon">🟢</div>
+            <div>
+                <strong>Acute Case</strong> — Recent onset (days to a few weeks), mild to moderate pain, no major neurological involvement. Your body is in the early stages of healing and responds well to care.
+            </div>
+        </div>
+
+        <h2>What's Happening in Your Body</h2>
+        <p>Something in your spine — most likely one or more joints — stopped moving the way it should. This is called a <strong>subluxation</strong>, and it's more common than you'd think. It can happen from a single incident (a wrong move, a minor fall, sleeping awkwardly) or just from the accumulated stress of daily life.</p>
+        <p>When a joint is stuck, the muscles around it tighten to protect it. That tightening is what you feel as pain, stiffness, or aching. Your nervous system is doing exactly what it's supposed to — it's just stuck in a protective pattern that chiropractic adjustments are designed to interrupt and reset.</p>
+        <p>The good news: <strong>acute cases respond quickly.</strong> Your body hasn't had time to adapt to the problem, which means there's less to undo.</p>
+        <p>Some acute flare-ups are the first sign of a spinal pattern that's been building quietly. When our exam findings point in that direction, we may recommend spinal X-rays to confirm what we're seeing — so your care plan is built on a complete picture.</p>
+
+        <h2>What to Expect Over the Next Few Weeks</h2>
+        <div class="collection-content-wrapper">
+            <div class="collection-content">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Timeframe</th>
+                            <th>What You'll Likely Notice</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Tonight &amp; tomorrow</strong></td>
+                            <td>You may feel some muscle soreness — similar to after a workout. This is normal. It means things are starting to move that haven't moved in a while.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Visits 1–3</strong></td>
+                            <td>Pain may fluctuate. Some days better, some days similar to when you came in. This is part of the process — not a sign that it isn't working.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Visits 4–6</strong></td>
+                            <td>Most patients in your situation report meaningful improvement in pain levels and movement during this window.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Visits 7–12</strong></td>
+                            <td>Stabilization. Gains hold longer between visits. Many straightforward acute cases reach full or near-full resolution in this window — your body has learned the new pattern and is holding it.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <h2>Why Coming Back Consistently Matters</h2>
+        <p>The adjustment effect is <strong>cumulative</strong> — each visit builds on the last. If visits are spaced too far apart early on, your spine drifts back between appointments and we're essentially starting over each time.</p>
+        <p>Think of it like physical therapy: the progress happens <em>between</em> visits because your body is responding to the input we gave it. Consistent input = consistent progress.</p>
+
+        <h2>Your Job Between Visits</h2>
+        <ul>
+            <li><strong>Tonight:</strong> Take a hot shower and let the water run over the area we worked on for a couple of minutes.</li>
+            <li><strong>If you get sore:</strong> Ice for 15–20 minutes. Remove it after 20 minutes — icing longer than that can actually increase inflammation and irritate the tissue rather than helping it.</li>
+            <li><strong>Stay moving:</strong> Gentle movement is better than rest for acute spinal cases. You don't need to avoid activity unless something feels sharp, is worsening, or involves numbness or weakness. Light walking, normal daily tasks, and easy stretching all help — extended bed rest slows recovery.</li>
+            <li><strong>Notice what changes:</strong> Pay attention to any shifts in pain, stiffness, or movement after your adjustment — and roughly how long the benefit lasts before things plateau or start drifting back. That window will get longer as we go. When you come in and say "I felt good for three days this time instead of one" — that's your spine learning to hold the correction, and it's exactly how we know the plan is working.</li>
+            <li><strong>Hydrate:</strong> Your discs and joints respond better when you're well-hydrated.</li>
+        </ul>
+
+        <h2>Your Next Appointment</h2>
+        <div class="callout appointment">
+            <div class="callout-icon">📅</div>
+            <div>
+                <p><strong>Visit 2 is your most important appointment.</strong> That's when we go over everything we found on Day 1, show you what it means, and build your care plan together.</p>
+                <p>If you haven't scheduled it yet:</p>
+                <ul class="contact-list">
+                    <li><strong>Text us:</strong> <a href="sms:+18445854113">(844) 585-4113</a></li>
+                    <li><strong>Call us:</strong> <a href="tel:+18042703000">(804) 270-3000</a></li>
+                </ul>
+                <p style="margin-top: 1rem;">Ideally, keep your second visit within a few days of your first visit — the second adjustment builds directly on the first.</p>
+            </div>
+        </div>
+
+        <h2>Questions Before Then?</h2>
+        <p>Call or text the front desk anytime. We'd rather hear from you than have you wondering.</p>
+
+        <div class="footer-info">
+            <strong>Tri-Ad Chiropractic</strong>
+            <p>📍 10857 West Broad Street, Glen Allen, VA 23060</p>
+            <p>📞 Call: <a href="tel:+18042703000">(804) 270-3000</a></p>
+            <p>💬 Text: <a href="sms:+18445854113">(844) 585-4113</a></p>
+        </div>
+    </div>
+</body>
+</html>
