@@ -68,4 +68,4 @@ Your first visit typically runs **30 minutes.** Follow-up visits are shorter —
 
 ---
 
-*Ready to take the first step? I'd love to help — whether it's just for you, or you're ready to bring your kids or whole family in for wellness care. Visit [drrobrva.com](http://drrobrva.com) to learn more or call us at (804) 270-3000 to schedule your first visit at Triad Chiropractic in Glen Allen, VA.*
+*Ready to take the first step? I'd love to help — whether it's just for you, or you're ready to bring your kids or whole family in for wellness care. Visit [drrobrva.com](http://drrobrva.com) to learn more or call us at [(804) 372-8277](tel:8043728277) to join the waitlist at Axis Chiropractic.*
