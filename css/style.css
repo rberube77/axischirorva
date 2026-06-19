@@ -1,12 +1,14 @@
 /* Reset and Base Styles */
 :root {
-    --primary-navy: #003366;
-    --secondary-bg: #f4f7f6;
-    --white: #ffffff;
-    --text-dark: #333333;
-    --accent-color: #ff6b35; /* High visibility orange for CTA */
-    --accent-hover: #e85a23;
-    --gold-accent: #d4af37;
+    --primary-navy: #1a1a1d;
+    --secondary-bg: #222225;
+    --white: #f5f5f5;
+    --text-dark: #e0e0e0;
+    --accent-color: #b87333; /* Metallic copper */
+    --accent-hover: #c88647;
+    --gold-accent: #b87333;
+    --font-serif: 'Playfair Display', 'Merriweather', 'Georgia', serif;
+    --font-sans: 'Inter', 'Segoe UI', Tahoma, Verdana, sans-serif;
 }
 
 * {
@@ -16,10 +18,19 @@
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: var(--font-sans);
     line-height: 1.6;
     color: var(--text-dark);
     background-color: var(--secondary-bg);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-serif);
+    color: var(--white);
+}
+
+.axis-cta-button:hover {
+    background-color: var(--accent-hover) !important;
 }
 
 /* Layout Utilities */
@@ -39,7 +50,7 @@ header {
 }
 
 header h1 {
-    font-size: 2.5rem;
+    font-size: 2.8rem;
     margin-bottom: 0.5rem;
     font-weight: 700;
     color: var(--white);
@@ -47,8 +58,8 @@ header h1 {
 
 header .subtitle {
     font-size: 1.2rem;
-    font-weight: 300;
-    opacity: 0.9;
+    font-weight: 400;
+    color: #cccccc;
     letter-spacing: 1px;
 }
 
@@ -109,7 +120,7 @@ header h1 .header-sub {
 .bio-content p {
     margin-bottom: 2rem;
     font-size: 1.1rem;
-    color: #555;
+    color: var(--text-dark);
 }
 
 /* Call to Action Button */
@@ -325,7 +336,7 @@ footer {
 
 .blog-intro p {
     font-size: 1.2rem;
-    color: #555;
+    color: var(--text-dark);
 }
 
 /* Blog Grid - Responsive Columns */
@@ -379,7 +390,7 @@ footer {
 
 .blog-card-meta {
     font-size: 0.85rem;
-    color: #888;
+    color: #aaa;
     margin-bottom: 0.5rem;
     font-style: italic;
 }
@@ -401,7 +412,7 @@ footer {
 }
 
 .blog-card-excerpt {
-    color: #555;
+    color: var(--text-dark);
     margin-bottom: 1.5rem;
     flex-grow: 1;
     font-size: 1rem;
@@ -437,7 +448,7 @@ footer {
 
 .blog-cta p {
     font-size: 1.1rem;
-    color: #555;
+    color: var(--text-dark);
     margin-bottom: 2rem;
     max-width: 600px;
     margin-left: auto;
@@ -492,7 +503,7 @@ footer {
 }
 
 .blog-date {
-    color: #777;
+    color: #aaa;
     font-style: italic;
     font-size: 0.95rem;
 }
@@ -500,7 +511,7 @@ footer {
 .blog-content {
     font-size: 1.125rem; /* 18px for better readability */
     line-height: 1.8;
-    color: #333;
+    color: var(--text-dark);
 }
 
 .blog-content p {
@@ -539,7 +550,7 @@ footer {
 .blog-footer-nav {
     margin-top: 3rem;
     padding-top: 2rem;
-    border-top: 1px solid #eee;
+    border-top: 1px solid rgba(255,255,255,0.1);
 }
 
 .back-link {
