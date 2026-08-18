@@ -5,17 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- SEO: Optimized Title for Glen Allen, VA + Pre-Launch Phase -->
-    <title>Axis Chiropractic | Henrico VA Chiropractor | Coming Late Summer 2026</title>
+    <title>Axis Chiropractic | Henrico VA Chiropractor | Coming Soon</title>
     
     <!-- SEO: Meta Description reflecting Pre-Launch and Founding Registry -->
-    <meta name="description" content="Axis Chiropractic is a modern, high-volume chiropractic facility coming to Glen Allen, VA in Late Summer 2026. Specializing in non-surgical structural & neurological restoration. Join our Founding Patient Registry today.">
+    <meta name="description" content="Dr. Rob Berube, D.C. is opening Axis Chiropractic, a private chiropractic practice in Henrico, VA serving the greater Richmond area. Now accepting sign-ups for new patients — one-on-one, unhurried structural care.">
     
     <!-- SEO: Canonical Tag -->
     <link rel="canonical" href="https://www.axischirorva.com/">
 
     <!-- SEO: Open Graph Tags -->
-    <meta property="og:title" content="Axis Chiropractic | Glen Allen, VA | Coming Late Summer 2026">
-    <meta property="og:description" content="Modern structural and neurological chiropractic care coming to Glen Allen, VA. Join the pre-opening Founding Patient Registry.">
+    <meta property="og:title" content="Axis Chiropractic | Henrico VA Chiropractor | Coming Soon">
+    <meta property="og:description" content="Dr. Rob Berube, D.C. is opening Axis Chiropractic, a private chiropractic practice in Henrico, VA serving the greater Richmond area. Now accepting sign-ups for new patients — one-on-one, unhurried structural care.">
     <meta property="og:image" content="https://www.axischirorva.com/images/spinal_degeneration.png">
     <meta property="og:url" content="https://www.axischirorva.com/">
     <meta property="og:type" content="website">
@@ -47,7 +47,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css?v=3.4">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
@@ -63,7 +63,7 @@
                 <img src="images/AxisChiroLogo.png" alt="Axis Chiropractic Logo">
             </a>
             <nav class="landing-nav-right">
-                <a href="#scroll-target" class="btn-copper btn-nav-roster">Pre-Register</a>
+                <a href="#scroll-target" class="btn-copper btn-nav-roster">Get on the Roster</a>
             </nav>
         </div>
     </header>
@@ -73,14 +73,15 @@
         <section class="landing-hero" id="hero">
             <div class="container">
                 <div class="hero-content">
-                    <span class="hero-tagline">Clinical Development Phase</span>
+                    <span class="hero-tagline">Coming Soon</span>
                     <h1 class="hero-headline">
                         <span class="hero-headline-brand">AXIS CHIROPRACTIC</span>
-                        <span class="hero-headline-proposition" style="font-weight: 300; font-size: 0.85em;">PRECISION STRUCTURAL INTEGRITY FOR RVA</span>
+                        <span class="hero-headline-proposition" style="font-weight: 300; font-size: 0.85em;">PRECISION CHIROPRACTIC CARE FOR RVA</span>
                     </h1>
-                    <p class="hero-subheadline">Launching Late Summer 2026. We are engineering an intentional, high-efficiency private studio specializing in one-on-one non-surgical structural and neurological restoration. Anticipated private practice concept.</p>
+                    <p class="hero-subheadline">No rushed visits. No assembly line. Just one-on-one structural care that gets to the root of why you're in pain. A private, single-doctor practice built on a direct doctor-patient relationship. No gatekeepers. Just you and the doctor.</p>
+                    <p class="hero-launch-date">Launching Soon.</p>
                     <div style="text-align: center;">
-                        <a href="#scroll-target" class="btn-hero-cta">Secure Placement on Founding Registry</a>
+                        <a href="#scroll-target" class="btn-hero-cta">Get on the Roster</a>
                     </div>
                 </div>
             </div>
@@ -90,13 +91,19 @@
         <section class="insurance-bridge" id="market-study">
             <div class="container">
                 <div class="insurance-bridge-grid">
-                    <div class="bridge-text">
-                        <h2>Regional Demand & Market Study.</h2>
-                        <p>Axis Chiropractic RVA is currently conducting a regional feasibility and demographic demand study ahead of a proposed 2026 concept launch. We are tracking community interest within Henrico County and the Greater Richmond area to optimize future clinical hours and single-room operational efficiency. Register your interest below to help shape the framework and receive priority updates.</p>
+                    <div class="bridge-left-column">
+                        <h2>Built differently. On purpose.</h2>
+                        <img src="images/drrob_blackpolo.png" alt="Dr. Rob Berube, D.C." class="bridge-portrait">
+                        <p>I'm Dr. Rob Berube, a Doctor of Chiropractic serving the Richmond area for the last 20+ years. I'm building Axis Chiropractic as a small private practice focused on structural correction, not symptom management. Appointments are unhurried. Care is personal.</p>
+                        <div class="accolade-badge">
+                            <span class="accolade-icon">★</span>
+                            <span class="accolade-text">Voted <strong>Top Doc</strong> (2020, 2021, 2023) &amp; <strong>Top Meds</strong> in Richmond</span>
+                        </div>
                     </div>
 
                     <div class="insurance-form-container" id="registry-form">
                         <div id="scroll-target" style="display: block; height: 200px; margin-top: -200px; visibility: hidden; pointer-events: none;"></div>
+                        <p class="form-description" style="color: #6A7275; margin-bottom: 1.5rem; font-size: 1.05rem; line-height: 1.6;">Currently finalizing our private clinical space in Western Henrico / Short Pump. Add your name and email below for priority access when scheduling opens.</p>
                         <form class="insurance-form" id="rosterForm" name="concept-registry" data-netlify="true" method="POST" onsubmit="handleRosterSubmit(event)">
                             <input type="hidden" name="form-name" value="concept-registry">
                             <div class="form-group">
@@ -104,26 +111,27 @@
                                 <input type="text" id="fullName" name="name" required placeholder="John Doe">
                             </div>
                             <div class="form-group">
-                                <label for="email">Email Address</label>
-                                <input type="email" id="email" name="email" required placeholder="john@example.com">
+                                <label for="emailAddress">Email Address</label>
+                                <input type="email" id="emailAddress" name="email" required placeholder="john@example.com">
                             </div>
-                            <button type="submit" class="btn-copper" style="width: 100%; border: none;">Join Concept Registry</button>
+                            <button type="submit" class="btn-copper" style="width: 100%; text-align: center;">Reserve My Spot</button>
                         </form>
+                        <p class="reassurance-text" style="color: #6A7275; margin-top: 1.5rem; font-size: 0.95rem; line-height: 1.5; font-style: italic; text-align: center;">No spam. Just a heads-up when the doors open.</p>
                         
                         <!-- Premium Success Message (Hidden by default) -->
-                        <div id="successCard" style="display: none; text-align: center; padding: 2rem 0;">
+                        <div id="registrySuccess" style="display: none; text-align: center; padding: 2rem 0;">
                             <div style="width: 64px; height: 64px; background: rgba(184, 115, 51, 0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem auto;">
                                 <i class="fas fa-check" style="color: var(--accent-copper); font-size: 1.75rem;"></i>
                             </div>
-                            <h3 style="font-family: var(--font-serif); font-size: 1.8rem; color: var(--text-black); margin-bottom: 1rem;">Registry Joined</h3>
-                            <p style="color: #6A7275; line-height: 1.6; font-size: 1rem;">Thank you. Your details have been received. Your placement on our Founding Registry is secured. Look out for updates as our Late Summer 2026 concept develops.</p>
+                            <h3 style="font-family: var(--font-serif); font-size: 1.8rem; color: var(--text-black); margin-bottom: 1rem;">You're on the list.</h3>
+                            <p style="color: #6A7275; line-height: 1.6; font-size: 1rem;">I'll be in touch when I'm ready to schedule — thank you for your interest in Axis Chiropractic.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Section 4: The Symptom-to-Structure Pivot -->
+        <!-- Section 4: Accolades / Core Clinical Value Props -->
         <section class="structure-pivot" id="protocol">
             <div class="container">
                 <div class="pivot-grid">
@@ -131,9 +139,22 @@
                         <img src="images/spinal_degeneration.png" alt="Monochromatic structural render of Spinal Degeneration analysis" loading="lazy">
                     </div>
                     <div class="pivot-text">
-                        <h2>Pain is a Trailing Indicator.</h2>
-                        <p>By the time an acute symptom manifests, structural shifting and neurological wear-and-tear have been quietly modifying your foundation for months.</p>
-                        <p>Our upcoming studio does not chase temporary warning lights. The Axis Protocol analyzes the baseline, stabilizes the core structure, and locks in alignment.</p>
+                        <h2>Pain is the last thing to show up.</h2>
+                        <p>By the time something hurts, your spine has usually been compensating for months. Whether you're dealing with nagging back pain, neck stiffness, sciatica, or chronic postural fatigue, we don't just chase the flare-up — we find what's driving it and restore proper structural movement.</p>
+                        <div class="focus-buckets">
+                            <div class="focus-bucket-item">
+                                <h4>Spinal & Disc Strain</h4>
+                                <p>Sciatica, acute or nagging low back pain, and deep spinal tension.</p>
+                            </div>
+                            <div class="focus-bucket-item">
+                                <h4>Postural & Neck Mobility</h4>
+                                <p>Desk-work tension, neck and shoulder stiffness, and movement compensation.</p>
+                            </div>
+                            <div class="focus-bucket-item">
+                                <h4>Functional Stability</h4>
+                                <p>Restoring proper structural movement so minor imbalances don't become setbacks.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -143,9 +164,76 @@
         <section class="operational-flow" id="flow">
             <div class="container">
                 <div class="flow-content">
-                    <span class="flow-tagline">Engineered Efficiency</span>
-                    <h2>Designed for High-Performance Lives.</h2>
-                    <p>We are eliminating the administrative friction, bloat, and wait times of traditional multi-doctor clinics. Our single-room, high-efficiency structural framework is engineered to deliver precise, high-leverage corrections on a professional timeline that respects your calendar.</p>
+                    <span class="flow-tagline">Personal, Not Processed</span>
+                    <h2>You're known here,<br>not just scheduled.</h2>
+                    <div class="flow-features">
+                        <div class="flow-feature-item">
+                            <div class="flow-feature-header">
+                                <svg class="flow-feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M12 2v20M9 6h6M8 11h8M9 16h6" />
+                                    <circle cx="12" cy="6" r="1.5" />
+                                    <circle cx="12" cy="11" r="1.5" />
+                                    <circle cx="12" cy="16" r="1.5" />
+                                </svg>
+                                <span class="flow-feature-lead">Full-spine checkup.</span>
+                            </div>
+                            <span class="flow-feature-desc">Every session starts the same way: checking your entire spine, top to bottom, every single visit so I see the whole picture before adjusting.</span>
+                        </div>
+                        <div class="flow-feature-item">
+                            <div class="flow-feature-header">
+                                <svg class="flow-feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M4 20A8 8 0 0 1 18 8H21" />
+                                    <polyline points="17 4 21 8 17 12" />
+                                </svg>
+                                <span class="flow-feature-lead">Care that adjusts as you do.</span>
+                            </div>
+                            <span class="flow-feature-desc">I pay attention to how you actually respond visit to visit, evolving your care with your progress rather than repeating the same routine.</span>
+                        </div>
+                        <div class="flow-feature-item">
+                            <div class="flow-feature-header">
+                                <svg class="flow-feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+                                    <circle cx="12" cy="8" r="2" />
+                                    <path d="M8 14c0-1.5 2-2 4-2s4 .5 4 2" />
+                                </svg>
+                                <span class="flow-feature-lead">Direct line to me.</span>
+                            </div>
+                            <span class="flow-feature-desc">You have direct access to your doctor for questions, updates, or follow-ups. No gatekeepers, call centers, or front-desk delays.</span>
+                        </div>
+                        <div class="flow-feature-item">
+                            <div class="flow-feature-header">
+                                <svg class="flow-feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <rect x="3" y="11" width="18" height="11" rx="2" ry="2" />
+                                    <path d="M7 11V7a5 5 0 0 1 9.9-1" />
+                                </svg>
+                                <span class="flow-feature-lead">No contracts or hard sells.</span>
+                            </div>
+                            <span class="flow-feature-desc">Care is recommended based strictly on what you need to stabilize and heal, never a cookie-cutter package or membership.</span>
+                        </div>
+                        <div class="flow-feature-item">
+                            <div class="flow-feature-header">
+                                <svg class="flow-feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M8 3v3c0 2.5 1.5 4 4 4s4-1.5 4-4V3" />
+                                    <path d="M12 10v6" />
+                                    <circle cx="12" cy="18" r="2.5" />
+                                    <circle cx="8" cy="3" r="1" />
+                                    <circle cx="16" cy="3" r="1" />
+                                </svg>
+                                <span class="flow-feature-lead">Sensible diagnostics.</span>
+                            </div>
+                            <span class="flow-feature-desc">We start with a thorough physical assessment. Imaging is only recommended when clinically necessary, never as a routine procedure.</span>
+                        </div>
+                        <div class="flow-feature-item">
+                            <div class="flow-feature-header">
+                                <svg class="flow-feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z" />
+                                    <line x1="7" y1="7" x2="7.01" y2="7" stroke-width="2" />
+                                </svg>
+                                <span class="flow-feature-lead">Upfront pricing.</span>
+                            </div>
+                            <span class="flow-feature-desc">You will always know your exact cost before care begins, with zero surprises. Flat, transparent rates with no hidden fees or unexpected bills.</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -163,7 +251,6 @@
                     <a href="javascript:void(0)" onclick="openModal('terms')">Terms of Pre-Registration</a>
                 </div>
             </div>
-            
             <div class="footer-compliance">
                 <p><strong>Axis Chiropractic RVA — Clinical Development Phase.</strong></p>
                 <p>Anticipated Opening: Late Summer 2026. Henrico County, RVA. Proposed clinical studio concept for 2026. All registry submissions, pre-registrations, and concept updates are preliminary and strictly do not establish an active doctor-patient relationship prior to an official opening. This site serves exclusively for pre-launch information, conceptual market research, and list-building purposes only.</p>
@@ -243,7 +330,14 @@
               
               setTimeout(() => {
                   form.style.display = 'none';
-                  const successCard = document.getElementById('successCard');
+                  
+                  // Hide description and reassurance
+                  const formDesc = document.querySelector('.form-description');
+                  const reassuranceText = document.querySelector('.reassurance-text');
+                  if (formDesc) formDesc.style.display = 'none';
+                  if (reassuranceText) reassuranceText.style.display = 'none';
+                  
+                  const successCard = document.getElementById('registrySuccess');
                   successCard.style.display = 'block';
                   successCard.style.opacity = '0';
                   successCard.style.transform = 'translateY(10px)';
