@@ -30,7 +30,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/style.css?v=5.4">
+    <link rel="stylesheet" href="css/style.css?v=5.5">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
@@ -424,11 +424,11 @@
                     <span class="lead-magnet-tagline">Not ready for a consult?</span>
                     <h2 class="lead-magnet-headline">Get the free guide: 5 Signs Your Body is Compensating Before it Hurts.</h2>
                     
-                    <form class="lead-magnet-form" id="rosterForm" name="concept-registry" data-netlify="true" method="POST" onsubmit="handleRosterSubmit(event)">
+                    <form class="lead-magnet-form lead-capture-form" id="rosterForm" name="concept-registry" data-netlify="true" method="POST" onsubmit="handleRosterSubmit(event)">
                         <input type="hidden" name="form-name" value="concept-registry">
                         <div class="lead-magnet-row">
-                            <input type="text" id="firstName" name="firstName" required placeholder="First Name" aria-label="First Name" class="lead-magnet-input">
-                            <input type="email" id="emailAddress" name="email" required placeholder="Your email address" aria-label="Email Address" class="lead-magnet-input">
+                            <input type="text" name="firstName" id="firstName" placeholder="First Name" required class="lead-magnet-input" />
+                            <input type="email" name="email" id="email" placeholder="Your email address" required class="lead-magnet-input" />
                             <button type="submit" class="btn-lead-submit">GET THE GUIDE</button>
                         </div>
                     </form>
